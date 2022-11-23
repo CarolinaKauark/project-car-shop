@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
+import ErrorGenerate from '../Helpers/ErrorGenerate';
 
 // class ErrorHandler {
 //   public static handle: ErrorRequestHandler(error, _req, res, next) {
@@ -15,6 +16,10 @@ class ErrorHandler {
     res: Response,
     next: NextFunction,
   ) {
+    if (error instanceof ErrorGenerate) {
+      const { status = 500, message } = error;
+      return res.status(status).json({ message });
+    }
     const { message } = error;
     res.status(500).json({ message });
     next();
