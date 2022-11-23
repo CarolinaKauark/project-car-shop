@@ -32,4 +32,12 @@ export default class CarService {
     if (!newCar) throw new ErrorGenerate(404, 'Car not found');
     return this.createCarDomain(newCar);
   }
+
+  public async updateById(id: string, body: ICar) {
+    const CarODM = new CarsODM();
+    const updatedCar = await CarODM.update(id, body);
+
+    if (!updatedCar) throw new ErrorGenerate(404, 'Car not found');
+    return this.createCarDomain(updatedCar);
+  }
 }
