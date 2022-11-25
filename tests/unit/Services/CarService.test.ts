@@ -49,4 +49,8 @@ describe('Testa o CarService', function () {
     // Assert
     expect(result).to.be.deep.equal(updatedCarOutput);
   });
+
+  afterEach(function () {
+    sinon.restore();
+  });
 });
