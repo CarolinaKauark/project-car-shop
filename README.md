@@ -8,6 +8,7 @@ O objetivo do projeto foi aplicar os princípios de Programação Orientada a Ob
 A aplicação foi desenvolvida em <strong>Node.js</strong> utilizando a <strong>arquitetura MSC</strong> - Model, Service, Controller -, o banco de dados <strong>MongoDB</strong> através do framework <strong>ODM mongoose</strong> para realizar o CRUD.
 
 ## 🛸 Principais tecnologias utilizadas: 
+- [POO](https://coodesh.com/blog/dicionario/o-que-e-poo-em-programacao/);
 - [Node.js](https://nodejs.org/en/);
 - [Express.js](https://expressjs.com/);
 - [mongoDB](https://www.mongodb.com/home);
