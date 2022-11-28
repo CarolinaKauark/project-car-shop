@@ -2,7 +2,7 @@
 Projeto desenvolvido no módulo de Back-end da [Trybe](https://www.betrybe.com/). 
 
 ## ✏ Sobre o projeto
-O objetivo do projeto foi desenvolver uma aplicação back end para a construção de uma API RESTful de gerenciar uma concessionária de veículos.
+O objetivo do projeto foi desenvolver uma aplicação back end para a construção de uma API RESTful de gerenciamento uma concessionária de veículos.
 </br>
 A aplicação foi desenvolvida em <strong>Node.js</strong> aplicando os princípios de Programação Orientada a Objetos (POO) e utilizando o banco de dados <strong>MongoDB</strong> através do framework <strong>mongoose (ODM)</strong> para realizar o CRUD.
 
