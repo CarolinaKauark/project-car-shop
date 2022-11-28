@@ -1,8 +1,9 @@
 import ErrorGenerate from '../Helpers/ErrorGenerate';
 import AbstractODM from '../Models/AbstractODM';
 
-export default class VehicleService<I, D> {
+export default abstract class VehicleService<I, D> {
   protected Model: new () => AbstractODM<I>;
+  //  protected Model: { new (): AbstractODM<I> }; pode ser feito dessa forma também
   protected erroMessage: string;
   protected Domain: new(newVehicle: I) => D;
 
